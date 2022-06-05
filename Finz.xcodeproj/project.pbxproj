@@ -14,6 +14,9 @@
 		4983CAAA284D206600F7FBE6 /* FinzTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4983CAA9284D206600F7FBE6 /* FinzTests.swift */; };
 		4983CAB4284D206600F7FBE6 /* FinzUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4983CAB3284D206600F7FBE6 /* FinzUITests.swift */; };
 		4983CAB6284D206600F7FBE6 /* FinzUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4983CAB5284D206600F7FBE6 /* FinzUITestsLaunchTests.swift */; };
+		4983CAC4284D314600F7FBE6 /* GRDB in Frameworks */ = {isa = PBXBuildFile; productRef = 4983CAC3284D314600F7FBE6 /* GRDB */; };
+		4983CAC8284D34FE00F7FBE6 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4983CAC7284D34FE00F7FBE6 /* User.swift */; };
+		4983CACB284D497900F7FBE6 /* GRDBQuery in Frameworks */ = {isa = PBXBuildFile; productRef = 4983CACA284D497900F7FBE6 /* GRDBQuery */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,7 @@
 		4983CAAF284D206600F7FBE6 /* FinzUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FinzUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4983CAB3284D206600F7FBE6 /* FinzUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinzUITests.swift; sourceTree = "<group>"; };
 		4983CAB5284D206600F7FBE6 /* FinzUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinzUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4983CAC7284D34FE00F7FBE6 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +55,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4983CACB284D497900F7FBE6 /* GRDBQuery in Frameworks */,
+				4983CAC4284D314600F7FBE6 /* GRDB in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +100,8 @@
 		4983CA97284D206500F7FBE6 /* Finz */ = {
 			isa = PBXGroup;
 			children = (
+				4983CAC6284D34EC00F7FBE6 /* Models */,
+				4983CAC5284D34D800F7FBE6 /* Components */,
 				4983CA98284D206500F7FBE6 /* FinzApp.swift */,
 				4983CA9A284D206500F7FBE6 /* ContentView.swift */,
 				4983CA9C284D206600F7FBE6 /* Assets.xcassets */,
@@ -127,6 +135,21 @@
 			path = FinzUITests;
 			sourceTree = "<group>";
 		};
+		4983CAC5284D34D800F7FBE6 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		4983CAC6284D34EC00F7FBE6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4983CAC7284D34FE00F7FBE6 /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +166,10 @@
 			dependencies = (
 			);
 			name = Finz;
+			packageProductDependencies = (
+				4983CAC3284D314600F7FBE6 /* GRDB */,
+				4983CACA284D497900F7FBE6 /* GRDBQuery */,
+			);
 			productName = Finz;
 			productReference = 4983CA95284D206500F7FBE6 /* Finz.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +242,10 @@
 				Base,
 			);
 			mainGroup = 4983CA8C284D206500F7FBE6;
+			packageReferences = (
+				4983CAC2284D314600F7FBE6 /* XCRemoteSwiftPackageReference "GRDB.swift" */,
+				4983CAC9284D497900F7FBE6 /* XCRemoteSwiftPackageReference "GRDBQuery" */,
+			);
 			productRefGroup = 4983CA96284D206500F7FBE6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -259,6 +290,7 @@
 			files = (
 				4983CA9B284D206500F7FBE6 /* ContentView.swift in Sources */,
 				4983CA99284D206500F7FBE6 /* FinzApp.swift in Sources */,
+				4983CAC8284D34FE00F7FBE6 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -423,6 +455,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -452,6 +485,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -583,6 +617,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4983CAC2284D314600F7FBE6 /* XCRemoteSwiftPackageReference "GRDB.swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/groue/GRDB.swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		4983CAC9284D497900F7FBE6 /* XCRemoteSwiftPackageReference "GRDBQuery" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/groue/GRDBQuery.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.4.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4983CAC3284D314600F7FBE6 /* GRDB */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4983CAC2284D314600F7FBE6 /* XCRemoteSwiftPackageReference "GRDB.swift" */;
+			productName = GRDB;
+		};
+		4983CACA284D497900F7FBE6 /* GRDBQuery */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4983CAC9284D497900F7FBE6 /* XCRemoteSwiftPackageReference "GRDBQuery" */;
+			productName = GRDBQuery;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4983CA8D284D206500F7FBE6 /* Project object */;
 }
