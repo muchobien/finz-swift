@@ -1,5 +1,5 @@
 //
-//  User.swift
+//  Account.swift
 //  Finz
 //
 //  Created by Rodrigo Sanabria on 5/6/22.
@@ -14,4 +14,11 @@ struct Account: Codable, FetchableRecord, PersistableRecord, Identifiable {
     var color: String
     var createdAt: Date
     var updatedAt: Date
+}
+
+extension Account {
+    static let transactions = hasMany(Transaction.self)
+    var transactions: QueryInterfaceRequest<Transaction> {
+        request(for: Account.transactions)
+    }
 }

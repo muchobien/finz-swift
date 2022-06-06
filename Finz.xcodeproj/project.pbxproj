@@ -15,8 +15,15 @@
 		4983CAB4284D206600F7FBE6 /* FinzUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4983CAB3284D206600F7FBE6 /* FinzUITests.swift */; };
 		4983CAB6284D206600F7FBE6 /* FinzUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4983CAB5284D206600F7FBE6 /* FinzUITestsLaunchTests.swift */; };
 		4983CAC4284D314600F7FBE6 /* GRDB in Frameworks */ = {isa = PBXBuildFile; productRef = 4983CAC3284D314600F7FBE6 /* GRDB */; };
-		4983CAC8284D34FE00F7FBE6 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4983CAC7284D34FE00F7FBE6 /* User.swift */; };
+		4983CAC8284D34FE00F7FBE6 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4983CAC7284D34FE00F7FBE6 /* Account.swift */; };
 		4983CACB284D497900F7FBE6 /* GRDBQuery in Frameworks */ = {isa = PBXBuildFile; productRef = 4983CACA284D497900F7FBE6 /* GRDBQuery */; };
+		4983CACE284D504200F7FBE6 /* Pulse in Frameworks */ = {isa = PBXBuildFile; productRef = 4983CACD284D504200F7FBE6 /* Pulse */; };
+		4983CAD0284D504200F7FBE6 /* PulseCore in Frameworks */ = {isa = PBXBuildFile; productRef = 4983CACF284D504200F7FBE6 /* PulseCore */; };
+		4983CAD2284D504200F7FBE6 /* PulseUI in Frameworks */ = {isa = PBXBuildFile; productRef = 4983CAD1284D504200F7FBE6 /* PulseUI */; };
+		4983CAD4284D530600F7FBE6 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4983CAD3284D530600F7FBE6 /* Category.swift */; };
+		4983CAD6284D533A00F7FBE6 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4983CAD5284D533A00F7FBE6 /* Transaction.swift */; };
+		4983CAD8284D749B00F7FBE6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4983CAD7284D749B00F7FBE6 /* AppDelegate.swift */; };
+		4983CADC284D7CE600F7FBE6 /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4983CADB284D7CE600F7FBE6 /* Database.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,7 +54,12 @@
 		4983CAAF284D206600F7FBE6 /* FinzUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FinzUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4983CAB3284D206600F7FBE6 /* FinzUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinzUITests.swift; sourceTree = "<group>"; };
 		4983CAB5284D206600F7FBE6 /* FinzUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinzUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		4983CAC7284D34FE00F7FBE6 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		4983CAC7284D34FE00F7FBE6 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		4983CAD3284D530600F7FBE6 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		4983CAD5284D533A00F7FBE6 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		4983CAD7284D749B00F7FBE6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4983CAD9284D783E00F7FBE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		4983CADB284D7CE600F7FBE6 /* Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,8 +67,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4983CACE284D504200F7FBE6 /* Pulse in Frameworks */,
+				4983CAD2284D504200F7FBE6 /* PulseUI in Frameworks */,
 				4983CACB284D497900F7FBE6 /* GRDBQuery in Frameworks */,
 				4983CAC4284D314600F7FBE6 /* GRDB in Frameworks */,
+				4983CAD0284D504200F7FBE6 /* PulseCore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,12 +115,15 @@
 		4983CA97284D206500F7FBE6 /* Finz */ = {
 			isa = PBXGroup;
 			children = (
+				4983CADA284D7CD500F7FBE6 /* Services */,
+				4983CAD9284D783E00F7FBE6 /* Info.plist */,
 				4983CAC6284D34EC00F7FBE6 /* Models */,
 				4983CAC5284D34D800F7FBE6 /* Components */,
 				4983CA98284D206500F7FBE6 /* FinzApp.swift */,
 				4983CA9A284D206500F7FBE6 /* ContentView.swift */,
 				4983CA9C284D206600F7FBE6 /* Assets.xcassets */,
 				4983CA9E284D206600F7FBE6 /* Preview Content */,
+				4983CAD7284D749B00F7FBE6 /* AppDelegate.swift */,
 			);
 			path = Finz;
 			sourceTree = "<group>";
@@ -145,9 +163,19 @@
 		4983CAC6284D34EC00F7FBE6 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				4983CAC7284D34FE00F7FBE6 /* User.swift */,
+				4983CAC7284D34FE00F7FBE6 /* Account.swift */,
+				4983CAD3284D530600F7FBE6 /* Category.swift */,
+				4983CAD5284D533A00F7FBE6 /* Transaction.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		4983CADA284D7CD500F7FBE6 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				4983CADB284D7CE600F7FBE6 /* Database.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -169,6 +197,9 @@
 			packageProductDependencies = (
 				4983CAC3284D314600F7FBE6 /* GRDB */,
 				4983CACA284D497900F7FBE6 /* GRDBQuery */,
+				4983CACD284D504200F7FBE6 /* Pulse */,
+				4983CACF284D504200F7FBE6 /* PulseCore */,
+				4983CAD1284D504200F7FBE6 /* PulseUI */,
 			);
 			productName = Finz;
 			productReference = 4983CA95284D206500F7FBE6 /* Finz.app */;
@@ -245,6 +276,7 @@
 			packageReferences = (
 				4983CAC2284D314600F7FBE6 /* XCRemoteSwiftPackageReference "GRDB.swift" */,
 				4983CAC9284D497900F7FBE6 /* XCRemoteSwiftPackageReference "GRDBQuery" */,
+				4983CACC284D504200F7FBE6 /* XCRemoteSwiftPackageReference "Pulse" */,
 			);
 			productRefGroup = 4983CA96284D206500F7FBE6 /* Products */;
 			projectDirPath = "";
@@ -288,9 +320,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4983CAD8284D749B00F7FBE6 /* AppDelegate.swift in Sources */,
 				4983CA9B284D206500F7FBE6 /* ContentView.swift in Sources */,
 				4983CA99284D206500F7FBE6 /* FinzApp.swift in Sources */,
-				4983CAC8284D34FE00F7FBE6 /* User.swift in Sources */,
+				4983CAC8284D34FE00F7FBE6 /* Account.swift in Sources */,
+				4983CAD4284D530600F7FBE6 /* Category.swift in Sources */,
+				4983CADC284D7CE600F7FBE6 /* Database.swift in Sources */,
+				4983CAD6284D533A00F7FBE6 /* Transaction.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -452,6 +488,7 @@
 				DEVELOPMENT_TEAM = HDU7SVF3ET;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Finz/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -482,6 +519,7 @@
 				DEVELOPMENT_TEAM = HDU7SVF3ET;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Finz/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -635,6 +673,14 @@
 				minimumVersion = 0.4.0;
 			};
 		};
+		4983CACC284D504200F7FBE6 /* XCRemoteSwiftPackageReference "Pulse" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kean/Pulse";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -647,6 +693,21 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 4983CAC9284D497900F7FBE6 /* XCRemoteSwiftPackageReference "GRDBQuery" */;
 			productName = GRDBQuery;
+		};
+		4983CACD284D504200F7FBE6 /* Pulse */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4983CACC284D504200F7FBE6 /* XCRemoteSwiftPackageReference "Pulse" */;
+			productName = Pulse;
+		};
+		4983CACF284D504200F7FBE6 /* PulseCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4983CACC284D504200F7FBE6 /* XCRemoteSwiftPackageReference "Pulse" */;
+			productName = PulseCore;
+		};
+		4983CAD1284D504200F7FBE6 /* PulseUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4983CACC284D504200F7FBE6 /* XCRemoteSwiftPackageReference "Pulse" */;
+			productName = PulseUI;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

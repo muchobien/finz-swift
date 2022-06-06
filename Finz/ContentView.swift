@@ -6,12 +6,23 @@
 //
 
 import SwiftUI
+#if DEBUG
+import PulseUI
+#endif
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
-           
+        TabView {
+            
+            Text("Hello").padding().tabItem{
+                Label("Home", systemImage: "list.dash")
+            }
+#if DEBUG
+            MainView().tabItem {
+                Label("Debug", systemImage: "exclamationmark.triangle")
+            }
+#endif
+        }
     }
 }
 

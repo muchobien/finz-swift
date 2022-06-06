@@ -6,9 +6,14 @@
 //
 
 import SwiftUI
+import Logging
+
+
 
 @main
 struct FinzApp: App {
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+
     var body: some Scene {
         WindowGroup {
             ContentView()
