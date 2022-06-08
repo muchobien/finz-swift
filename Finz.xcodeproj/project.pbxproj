@@ -24,6 +24,11 @@
 		4983CAD6284D533A00F7FBE6 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4983CAD5284D533A00F7FBE6 /* Transaction.swift */; };
 		4983CAD8284D749B00F7FBE6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4983CAD7284D749B00F7FBE6 /* AppDelegate.swift */; };
 		4983CADC284D7CE600F7FBE6 /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4983CADB284D7CE600F7FBE6 /* Database.swift */; };
+		49C99002285135E60057B302 /* AssetsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C99001285135E60057B302 /* AssetsView.swift */; };
+		49C990042851364E0057B302 /* BottomTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C990032851364E0057B302 /* BottomTabView.swift */; };
+		49C99006285137540057B302 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C99005285137540057B302 /* SettingsView.swift */; };
+		49C9900828513B270057B302 /* TransactionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C9900728513B270057B302 /* TransactionsView.swift */; };
+		49C9900C28513BF00057B302 /* AnalyticsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C9900B28513BF00057B302 /* AnalyticsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +65,11 @@
 		4983CAD7284D749B00F7FBE6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4983CAD9284D783E00F7FBE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		4983CADB284D7CE600F7FBE6 /* Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
+		49C99001285135E60057B302 /* AssetsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetsView.swift; sourceTree = "<group>"; };
+		49C990032851364E0057B302 /* BottomTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomTabView.swift; sourceTree = "<group>"; };
+		49C99005285137540057B302 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		49C9900728513B270057B302 /* TransactionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsView.swift; sourceTree = "<group>"; };
+		49C9900B28513BF00057B302 /* AnalyticsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +102,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4907CC08284FF11E00426281 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				49C99001285135E60057B302 /* AssetsView.swift */,
+				49C990032851364E0057B302 /* BottomTabView.swift */,
+				49C99005285137540057B302 /* SettingsView.swift */,
+				49C9900728513B270057B302 /* TransactionsView.swift */,
+				49C9900B28513BF00057B302 /* AnalyticsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		4983CA8C284D206500F7FBE6 = {
 			isa = PBXGroup;
 			children = (
@@ -115,6 +137,7 @@
 		4983CA97284D206500F7FBE6 /* Finz */ = {
 			isa = PBXGroup;
 			children = (
+				4907CC08284FF11E00426281 /* Views */,
 				4983CADA284D7CD500F7FBE6 /* Services */,
 				4983CAD9284D783E00F7FBE6 /* Info.plist */,
 				4983CAC6284D34EC00F7FBE6 /* Models */,
@@ -320,11 +343,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49C990042851364E0057B302 /* BottomTabView.swift in Sources */,
 				4983CAD8284D749B00F7FBE6 /* AppDelegate.swift in Sources */,
+				49C99002285135E60057B302 /* AssetsView.swift in Sources */,
 				4983CA9B284D206500F7FBE6 /* ContentView.swift in Sources */,
 				4983CA99284D206500F7FBE6 /* FinzApp.swift in Sources */,
+				49C9900828513B270057B302 /* TransactionsView.swift in Sources */,
+				49C99006285137540057B302 /* SettingsView.swift in Sources */,
 				4983CAC8284D34FE00F7FBE6 /* Account.swift in Sources */,
 				4983CAD4284D530600F7FBE6 /* Category.swift in Sources */,
+				49C9900C28513BF00057B302 /* AnalyticsView.swift in Sources */,
 				4983CADC284D7CE600F7FBE6 /* Database.swift in Sources */,
 				4983CAD6284D533A00F7FBE6 /* Transaction.swift in Sources */,
 			);
@@ -489,18 +517,20 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Finz/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Finz;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Network usage required for debugging purposes ";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = dev.muchobien.Finz;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.muchobien.finz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -520,18 +550,20 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Finz/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Finz;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Network usage required for debugging purposes ";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = dev.muchobien.Finz;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.muchobien.finz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

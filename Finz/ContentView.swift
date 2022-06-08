@@ -12,17 +12,7 @@ import PulseUI
 
 struct ContentView: View {
     var body: some View {
-        TabView {
-            
-            Text("Hello").padding().tabItem{
-                Label("Home", systemImage: "list.dash")
-            }
-#if DEBUG
-            MainView().tabItem {
-                Label("Debug", systemImage: "exclamationmark.triangle")
-            }
-#endif
-        }
+        BottomTabView()
     }
 }
 
