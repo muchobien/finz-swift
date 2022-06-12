@@ -8,24 +8,26 @@
 import SwiftUI
 
 struct BottomTabView: View {
+    @EnvironmentObject var navigation: NavigationService
+
     var body: some View {
-        TabView {
+        TabView(selection: $navigation.activeTab) {
             TransactionsView()
                 .tabItem {
                     Label("Transactions", systemImage: "list.bullet.rectangle.portrait.fill")
-                }
+                }.tag(Tab.transactions)
             AnalyticsView()
                 .tabItem {
                     Label("Analytics", systemImage: "chart.bar.xaxis")
-                }
+                }.tag(Tab.analytics)
             AssetsView()
                 .tabItem {
                     Label("Assets", systemImage: "square.stack.3d.up.fill")
-                }
+                }.tag(Tab.assets)
             SettingsView()
                 .tabItem {
                     Label("Settings", systemImage: "gearshape.fill")
-                }
+                }.tag(Tab.settings)
         }
     }
 }

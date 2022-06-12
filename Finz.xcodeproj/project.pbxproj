@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4975BEC628536901008804E6 /* NavigationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4975BEC528536901008804E6 /* NavigationService.swift */; };
+		4975BECA28562BB7008804E6 /* AssetComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4975BEC928562BB7008804E6 /* AssetComponent.swift */; };
 		4983CA99284D206500F7FBE6 /* FinzApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4983CA98284D206500F7FBE6 /* FinzApp.swift */; };
 		4983CA9B284D206500F7FBE6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4983CA9A284D206500F7FBE6 /* ContentView.swift */; };
 		4983CA9D284D206600F7FBE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4983CA9C284D206600F7FBE6 /* Assets.xcassets */; };
@@ -17,9 +19,6 @@
 		4983CAC4284D314600F7FBE6 /* GRDB in Frameworks */ = {isa = PBXBuildFile; productRef = 4983CAC3284D314600F7FBE6 /* GRDB */; };
 		4983CAC8284D34FE00F7FBE6 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4983CAC7284D34FE00F7FBE6 /* Account.swift */; };
 		4983CACB284D497900F7FBE6 /* GRDBQuery in Frameworks */ = {isa = PBXBuildFile; productRef = 4983CACA284D497900F7FBE6 /* GRDBQuery */; };
-		4983CACE284D504200F7FBE6 /* Pulse in Frameworks */ = {isa = PBXBuildFile; productRef = 4983CACD284D504200F7FBE6 /* Pulse */; };
-		4983CAD0284D504200F7FBE6 /* PulseCore in Frameworks */ = {isa = PBXBuildFile; productRef = 4983CACF284D504200F7FBE6 /* PulseCore */; };
-		4983CAD2284D504200F7FBE6 /* PulseUI in Frameworks */ = {isa = PBXBuildFile; productRef = 4983CAD1284D504200F7FBE6 /* PulseUI */; };
 		4983CAD4284D530600F7FBE6 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4983CAD3284D530600F7FBE6 /* Category.swift */; };
 		4983CAD6284D533A00F7FBE6 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4983CAD5284D533A00F7FBE6 /* Transaction.swift */; };
 		4983CAD8284D749B00F7FBE6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4983CAD7284D749B00F7FBE6 /* AppDelegate.swift */; };
@@ -49,6 +48,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4975BEC528536901008804E6 /* NavigationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationService.swift; sourceTree = "<group>"; };
+		4975BEC928562BB7008804E6 /* AssetComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetComponent.swift; sourceTree = "<group>"; };
 		4983CA95284D206500F7FBE6 /* Finz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Finz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4983CA98284D206500F7FBE6 /* FinzApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinzApp.swift; sourceTree = "<group>"; };
 		4983CA9A284D206500F7FBE6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -77,11 +78,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4983CACE284D504200F7FBE6 /* Pulse in Frameworks */,
-				4983CAD2284D504200F7FBE6 /* PulseUI in Frameworks */,
 				4983CACB284D497900F7FBE6 /* GRDBQuery in Frameworks */,
 				4983CAC4284D314600F7FBE6 /* GRDB in Frameworks */,
-				4983CAD0284D504200F7FBE6 /* PulseCore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,6 +112,13 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		4975BEC828562B56008804E6 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
 		4983CA8C284D206500F7FBE6 = {
 			isa = PBXGroup;
 			children = (
@@ -137,6 +142,7 @@
 		4983CA97284D206500F7FBE6 /* Finz */ = {
 			isa = PBXGroup;
 			children = (
+				4975BEC828562B56008804E6 /* New Group */,
 				4907CC08284FF11E00426281 /* Views */,
 				4983CADA284D7CD500F7FBE6 /* Services */,
 				4983CAD9284D783E00F7FBE6 /* Info.plist */,
@@ -179,6 +185,7 @@
 		4983CAC5284D34D800F7FBE6 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				4975BEC928562BB7008804E6 /* AssetComponent.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -197,6 +204,7 @@
 			isa = PBXGroup;
 			children = (
 				4983CADB284D7CE600F7FBE6 /* Database.swift */,
+				4975BEC528536901008804E6 /* NavigationService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -208,6 +216,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4983CAB9284D206600F7FBE6 /* Build configuration list for PBXNativeTarget "Finz" */;
 			buildPhases = (
+				4975BEC728537283008804E6 /* Run SwiftLint */,
 				4983CA91284D206500F7FBE6 /* Sources */,
 				4983CA92284D206500F7FBE6 /* Frameworks */,
 				4983CA93284D206500F7FBE6 /* Resources */,
@@ -220,9 +229,6 @@
 			packageProductDependencies = (
 				4983CAC3284D314600F7FBE6 /* GRDB */,
 				4983CACA284D497900F7FBE6 /* GRDBQuery */,
-				4983CACD284D504200F7FBE6 /* Pulse */,
-				4983CACF284D504200F7FBE6 /* PulseCore */,
-				4983CAD1284D504200F7FBE6 /* PulseUI */,
 			);
 			productName = Finz;
 			productReference = 4983CA95284D206500F7FBE6 /* Finz.app */;
@@ -299,7 +305,6 @@
 			packageReferences = (
 				4983CAC2284D314600F7FBE6 /* XCRemoteSwiftPackageReference "GRDB.swift" */,
 				4983CAC9284D497900F7FBE6 /* XCRemoteSwiftPackageReference "GRDBQuery" */,
-				4983CACC284D504200F7FBE6 /* XCRemoteSwiftPackageReference "Pulse" */,
 			);
 			productRefGroup = 4983CA96284D206500F7FBE6 /* Products */;
 			projectDirPath = "";
@@ -338,6 +343,27 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4975BEC728537283008804E6 /* Run SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run SwiftLint";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export PATH=\"$PATH:/opt/homebrew/bin\"\nif which swiftlint > /dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4983CA91284D206500F7FBE6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -353,7 +379,9 @@
 				4983CAC8284D34FE00F7FBE6 /* Account.swift in Sources */,
 				4983CAD4284D530600F7FBE6 /* Category.swift in Sources */,
 				49C9900C28513BF00057B302 /* AnalyticsView.swift in Sources */,
+				4975BECA28562BB7008804E6 /* AssetComponent.swift in Sources */,
 				4983CADC284D7CE600F7FBE6 /* Database.swift in Sources */,
+				4975BEC628536901008804E6 /* NavigationService.swift in Sources */,
 				4983CAD6284D533A00F7FBE6 /* Transaction.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -705,14 +733,6 @@
 				minimumVersion = 0.4.0;
 			};
 		};
-		4983CACC284D504200F7FBE6 /* XCRemoteSwiftPackageReference "Pulse" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/kean/Pulse";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.0;
-			};
-		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -725,21 +745,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 4983CAC9284D497900F7FBE6 /* XCRemoteSwiftPackageReference "GRDBQuery" */;
 			productName = GRDBQuery;
-		};
-		4983CACD284D504200F7FBE6 /* Pulse */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 4983CACC284D504200F7FBE6 /* XCRemoteSwiftPackageReference "Pulse" */;
-			productName = Pulse;
-		};
-		4983CACF284D504200F7FBE6 /* PulseCore */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 4983CACC284D504200F7FBE6 /* XCRemoteSwiftPackageReference "Pulse" */;
-			productName = PulseCore;
-		};
-		4983CAD1284D504200F7FBE6 /* PulseUI */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 4983CACC284D504200F7FBE6 /* XCRemoteSwiftPackageReference "Pulse" */;
-			productName = PulseUI;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

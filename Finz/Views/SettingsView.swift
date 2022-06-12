@@ -6,22 +6,21 @@
 //
 
 import SwiftUI
-#if DEBUG
-import PulseUI
-#endif
 
 struct SettingsView: View {
+    @EnvironmentObject var navigation: StackNavigation
+
     var body: some View {
         NavigationView {
                 Form {
-                Section("Developer") {
-                    NavigationLink(destination: MainView()) {
-                        Text("Pulse")
-                    }
-                    }
-                }.navigationTitle("Settings")
-            
-        }
+                    Section("Developer") {
+                        Button("Pulse") {
+
+                        }
+                        }
+
+                    }.navigationTitle("Settings")
+                }
     }
 }
 

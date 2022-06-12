@@ -23,7 +23,7 @@ extension Transaction {
     var category: QueryInterfaceRequest<Category> {
         request(for: Transaction.category)
     }
-    
+
     static let account = belongsTo(Account.self)
     var account: QueryInterfaceRequest<Account> {
         request(for: Transaction.account)

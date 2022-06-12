@@ -11,7 +11,7 @@ struct AssetsView: View {
     var body: some View {
         NavigationView {
                 Form {
-                
+
                 }
                 .navigationTitle("Assets")
         }

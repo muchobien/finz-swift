@@ -8,8 +8,6 @@
 import SwiftUI
 import Logging
 
-
-
 @main
 struct FinzApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate

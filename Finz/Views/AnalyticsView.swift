@@ -11,7 +11,7 @@ struct AnalyticsView: View {
     var body: some View {
         NavigationView {
                 Form {
-                
+
                 }
                 .navigationTitle("Analytics")
         }
